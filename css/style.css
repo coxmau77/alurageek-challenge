@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url(./normalize.css);
 
 .ibm-plex-mono-light {
     font-family: "IBM Plex Mono", monospace;
@@ -32,12 +33,20 @@
     font-style: normal;
 }
 
+body {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .6rem;
     background-color: #5300C8;
+    padding: 2rem;
 }
 
 h1 {
@@ -56,7 +65,7 @@ footer {
     flex-direction: column;
     background-color: #5300C8;
     color: white;
-    padding: .6rem;
+    padding: 2rem;
 
     span {
         font-family: "Pixelify Sans", sans-serif;
