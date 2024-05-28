@@ -5,28 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek - Challenge</title>
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <nav>
-        <img src="./images/icons-heart.svg" alt="Icono de AluraGeek Challenge">
-        <h1>AluraGeek</h1>
+        <div data-brand>
+            <img src="./images/icons-heart.svg" alt="Icono de AluraGeek Challenge">
+            <h1>AluraGeek</h1>
+        </div>
     </nav>
     <main>
         <!-- Contenido principal -->
-        <h2>Mis productos</h2>
-    </main>
-    <aside>
-        <!-- Agregar producto -->
-        <h2>Agregar producto</h2>
-    </aside>
-    <footer>
-        <section>
-            <img src="./images/icons-heart.svg" alt="Icono de AluraGeek Challenge">
-            <span>AluraGeek</span>
+        <section data-products>
+            <h2>mis productos</h2>
+            <ul>
+                <li>
+                    <a href="http://">
+                        <img src="./images/product-image.webp" alt="imagen de un producto de ejemplo">
+                    </a>
+                    <p>Descripcion producto</p>
+                </li>
+                <li>
+                    <a href="http://">
+                        <img src="./images/product-image.webp" alt="imagen de un producto de ejemplo">
+                    </a>
+                    <p>Descripcion producto</p>
+                </li>
+                <li>
+                    <a href="http://">
+                        <img src="./images/product-image.webp" alt="imagen de un producto de ejemplo">
+                    </a>
+                    <p>Descripcion producto</p>
+                    <section>
+                        <div>
+                            <del>1.990<sub>00</sub></del>
+                            <span>1.000<sub>00</sub></span>
+                        </div>
+                        <i><!--Delete icon--></i>
+                    </section>
+                </li>
+
+            </ul>
         </section>
-        <p>Desarrollado por Mauricio Cox &copy;</p>
+        <!-- Agregar producto -->
+        <form data-form>
+            <!-- Agregar el formato de texto ::before y textTransform - AGREGAR PRODUCTOS: -->
+            <h2>agregar productos</h2>
+        </form>
+    </main>
+    <footer>
+        <div data-brand>
+            <img src="./images/icons-heart.svg" alt="Icono de AluraGeek Challenge">
+            <h1>AluraGeek</h1>
+        </div>
+        <small>Desarrollado por Mauricio Cox &copy;</small>
         <small>Alura Latam - 2024</small>
     </footer>
     <script src="./js/script.js"></script>

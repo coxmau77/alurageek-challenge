@@ -31,6 +31,15 @@
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-style: normal;
+    --primary-clr: #5300C8;
+    --txt-clr-light: #ebddff;
+    --txt-clr-dark: #1b0a33;
+}
+
+html {
+    background: linear-gradient(0deg, #5300c813, #ff56e323), radial-gradient(closest-side, #5300c81e, #ebddff17)0/ 1em 1em;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
 }
 
 body {
@@ -38,41 +47,124 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: minmax(0, 1fr);
+    color: var(--txt-clr-dark);
 }
 
 nav {
+    display: grid;
+    place-items: center;
+    background-color: var(--primary-clr);
+    padding: 1rem;
+}
+
+[data-brand] {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .6rem;
-    background-color: #5300C8;
-    padding: 2rem;
-}
+    gap: 1rem;
 
-h1 {
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 3rem;
-    color: white;
-}
+    img {
+        width: 4.7rem;
+    }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #5300C8;
-    color: white;
-    padding: 2rem;
-
-    span {
+    h1 {
         font-family: "Pixelify Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
-        font-size: 3rem;
+        font-size: 2.2rem;
+        color: var(--txt-clr-light);
+    }
+}
 
+main {
+    /* background-color: yellowgreen; */
+    display: grid;
+    grid-template-rows: auto 2fr;
+    grid-template-areas: "form" "section";
+
+    h2 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 1rem 2vw;
+
+        &::after {
+            content: ":";
+        }
+    }
+}
+
+[data-products] {
+    /* background-color: hotpink; */
+    grid-area: section;
+    padding: 1rem 2vw;
+
+    ul {
+        display: flex;
+        gap: .5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+        li {
+            border: 1px solid red;
+            max-width: 9.2rem;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                text-wrap: balance;
+            }
+
+            section {
+
+                display: flex;
+                align-items: center;
+
+                i {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url('../images/🦆\ icon-trash.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+[data-form] {
+    grid-area: form;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    gap: .6rem;
+    background-color: var(--primary-clr);
+    color: var(--txt-clr-light);
+    padding: 1rem;
+
+    & small {
+        font-size: small;
+    }
+}
+
+@media (min-width: 640px) {
+
+    [data-brand] {
+        img {
+            width: 8rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
     }
 }
