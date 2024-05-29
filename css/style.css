@@ -78,7 +78,6 @@ nav {
 }
 
 main {
-    /* background-color: yellowgreen; */
     display: grid;
     grid-template-rows: auto 2fr;
     grid-template-areas: "form" "section";
@@ -88,7 +87,7 @@ main {
         font-size: 1.3rem;
         font-weight: 600;
         text-transform: uppercase;
-        margin: 1rem 2vw;
+        margin: 1rem 0;
         text-align: center;
 
         &::after {
@@ -98,7 +97,6 @@ main {
 }
 
 [data-products] {
-    /* background-color: hotpink; */
     grid-area: section;
     padding: 1rem 2vw;
 
@@ -132,11 +130,13 @@ main {
 
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 padding: .4rem .8rem;
 
                 div {
                     span {
                         font-weight: 600;
+                        display: block;
 
                         sup {
                             font-size: small;
@@ -225,8 +225,21 @@ footer {
     }
 
     [data-form] {
-        min-width: 450px;
-        margin: 1rem auto;
+        min-width: 330px;
+        margin: 1rem;
         border-radius: 10px;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 750px) {
+
+    main {
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: "section form";
+    }
+
+    [data-products] ul li {
+        max-width: 18rem;
     }
 }
