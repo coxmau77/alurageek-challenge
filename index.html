@@ -183,14 +183,13 @@
         </section>
         <!-- Agregar producto -->
         <form data-form>
-            <!-- Agregar el formato de texto ::before y textTransform - AGREGAR PRODUCTOS: -->
             <h2>agregar producto</h2>
-            <input type="text" name="product-name" id="product_name" placeholder="nombre ...">
-            <input type="number" name="product-price" id="product-price" placeholder="precio ...">
-            <input type="url" name="product-image" id="product-image" placeholder="imagen ...">
+            <input type="text" name="name" placeholder="nombre ..." minlength="5" data-input required>
+            <input type="text" name="price" placeholder="precio ..." data-input required>
+            <input type="url" name="image" placeholder="url: imagen ..." data-input required>
             <div>
                 <input type="reset" value="cancelar">
-                <input type="submit" value="cargar producto">
+                <input type="submit" id="btn-submit" value="cargar producto">
             </div>
         </form>
     </main>
@@ -202,7 +201,7 @@
         <small>Desarrollado por Mauricio Cox &copy;</small>
         <small>Alura Latam - 2024</small>
     </footer>
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

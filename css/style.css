@@ -12,6 +12,7 @@
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-style: normal;
+    color: aquamarine;
 }
 
 .ibm-plex-mono-bold {
@@ -106,7 +107,6 @@ main {
         gap: .5rem;
         flex-wrap: wrap;
         justify-content: center;
-
 
         li {
             border: 2px solid var(--primary-clr);
@@ -224,7 +224,7 @@ footer {
     }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 620px) {
 
     [data-brand] {
         img {
@@ -234,6 +234,10 @@ footer {
         h1 {
             font-size: 4rem;
         }
+    }
+
+    [data-products] ul li {
+        max-width: 12rem;
     }
 
     [data-form] {

@@ -26,5 +26,17 @@
             },
             "id": 2
         }
+    ],
+    "usuarios": [
+        {
+            "id": 13,
+            "nome": "Laura González",
+            "perfil": "Administración"
+        },
+        {
+            "id": 14,
+            "nome": "Pepe Argento",
+            "perfil": "Vendedor de zapatos"
+        }
     ]
 }
