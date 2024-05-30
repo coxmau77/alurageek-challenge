@@ -9,11 +9,11 @@
 ## Descripción del desafío
 En éste desafío se desarrolla una aplicación para listar, registrar y eliminar productos usando ``HTML``, ``CSS``, ``javaScript`` y ``json-server``
 
-> - **HTML** se utilizaron etiquetas semánticas como `<nav>, <main>, <section>` y se utilizo el recurso del atributo `data` para mantener la legibilidad de `HTML`
+> **HTML** se utilizaron etiquetas semánticas como `<nav>, <main>, <section>` y se utilizo el recurso del atributo `data` para mantener la legibilidad de `HTML`
 
-> - **CSS** se aplicaron varias metodologías modernas y selectores como `:root, normalizeCSS, dataSelectors, NestingCSS, variables` para lograr crear algo similar a un componente
+> **CSS** se aplicaron varias metodologías modernas y selectores como `:root, normalizeCSS, dataSelectors, NestingCSS, variables` para lograr crear algo similar a un componente
 
-> - **javaScript** se implementarios métodos como `fetch, async await, try & catch, modules` logrando una modularización del código para llegar a una mejor comprensión de lo que hace cada función, esto permitió mejorar la escalabilidad y mantenimiento del código.
+> **javaScript** se implementarios métodos como `fetch, async await, try & catch, modules` logrando una modularización del código para llegar a una mejor comprensión de lo que hace cada función, esto permitió mejorar la escalabilidad y mantenimiento del código.
 
 ## Cómo utilizar la APP
 
