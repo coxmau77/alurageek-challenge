@@ -1,5 +1,6 @@
 
-const apiUrl = 'http://localhost:3000/items';
+// const apiUrl = 'http://localhost:3000/items';
+const apiUrl = '../db/products.json';
 
 import getProductData from "./get.products.js";
 
